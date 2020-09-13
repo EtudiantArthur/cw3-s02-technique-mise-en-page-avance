@@ -4,7 +4,9 @@
 /* font-family: 'Bungee Shade', cursive; */
 
 /* LES VARIABLES CSS ICI */
-
+root{
+    --de-principale: linear-gradient(36deg, rgba(167,2,154,0.7) 0%, rgba(167,2,154,0) 100%);
+}
 /*---------------------- Generic ----------------------*/
 
 /* Mettre la ligne universelle pour le box-sizing */
@@ -13,6 +15,19 @@
 }
 
 h1, h2, h3, p{
+    margin: 0;
+}
+
+/*---------------------- Elements ----------------------*/
+body{
+    font-family: Cardo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+
+    /*margin: 0 auto;*/
     margin: 0;
 }
 
@@ -25,15 +40,43 @@ a:hover{
     color: darkmagenta;
 }
 
-root{
-    --de-principale: linear-gradient(36deg, rgba(167,2,154,0.7) 0%, rgba(167,2,154,0) 100%);
+/*---------------------- Components ----------------------*/
+.conteneur{
+    max-width: 1140px;
+    margin: 0 auto;
 }
-/*---------------------- Elements ----------------------*/
+
+.header-principal{
+    background-color: black;
+    padding: 15px 0;
+
+    position: fixed;
+    width: 100%;
+
+    z-index: 3;
+}
+
+.header-principal .conteneur h1{
+    font-family: Bungee Shade;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 43px;
+    text-align: left;
+
+    color: white;
+
+    /*  margin-left: 152px;*/
+}
+
+.header-principal .conteneur h3{
+    text-align: center;
+    margin: 0;
+}
 
 .hero{
-   height: 88vh;
+    height: 88vh;
     background-color: black;
-
 
     position: relative;
 }
@@ -93,60 +136,6 @@ position: absolute;
     font-size: 24px;
 }
 
-.conteneur{
-    max-width: 1140px;
-    margin: 0 auto;
-
-}
-
-body{
-    font-family: Cardo;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 32px;
-    text-align: center;
-
-    /*margin: 0 auto;*/
-    margin: 0;
-}
-
-.header-principal{
-    background-color: black;
-    padding: 15px 0;
-
-    position: fixed;
-    width: 100%;
-
-    z-index: 3;
-}
-
-.header-principal .conteneur h1{
-    font-family: Bungee Shade;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 36px;
-    line-height: 43px;
-    text-align: left;
-
-    color: white;
-
-  /*  margin-left: 152px;*/
-}
-
-.header-principal .conteneur h3{
-    text-align: center;
-    margin: 0;
-}
-
-
-
-/*.interet .conteneur h3 p{
-    text-align: center;
-    margin-bottom: 58px;
-    /* [IMPORTANT] N'arrive pas à atteindre le paragraphe mais les propriété fontionnne.
-}*/
-
 .cartes{
     display: flex;
     flex-direction: row;
@@ -155,18 +144,6 @@ body{
     flex-wrap: wrap;
 }
 
-/*.cartes :nth-child(1){
-    margin-top: 58px;
-}
-
-.cartes :nth-child(2){
-    margin-top: 58px;
-}
-
-.cartes :nth-child(3){
-    margin-top: 58px;
-}*/
-
 .interet{
     background-image:url("../images/bg-interet.jpg") ;
     background-size:cover ;
@@ -174,7 +151,6 @@ body{
     background-attachment: fixed;
 
     padding: 66px 0 82px 0;
-
 }
 
 .interet .conteneur h3{
@@ -205,12 +181,10 @@ body{
     margin-bottom: 0;
     font-size: 18px;
     line-height: 24px;
-
 }
 
 .carte h4{
     margin:  18px 0;
-
 }
 
 .carte{
@@ -293,15 +267,6 @@ img{
 
     margin: 0;
 }
-
-
-
-/*---------------------- Components ----------------------*/
-
-
-
-
-
 
 /*---------------------- Utilities ----------------------*/
 
