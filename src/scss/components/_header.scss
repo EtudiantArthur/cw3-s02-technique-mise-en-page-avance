@@ -1,0 +1,27 @@
+.header-principal{
+  background-color: black;
+  padding: 15px 0;
+
+  position: fixed;
+  width: 100%;
+
+  z-index: 3;
+}
+
+.header-principal .conteneur h1{
+  font-family: Bungee Shade;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 43px;
+  text-align: left;
+
+  color: white;
+
+  /*  margin-left: 152px;*/
+}
+
+.header-principal .conteneur h3{
+  text-align: center;
+  margin: 0;
+}

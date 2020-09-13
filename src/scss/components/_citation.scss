@@ -1,0 +1,41 @@
+.citation{
+  background: url("../images/bg-citation.jpg");
+  background-size:cover ;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.citation .conteneur{
+  height: 404px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /*align-items: center;*/
+}
+
+.citation h3{
+  font-family: Cardo;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 54px;
+  text-transform: uppercase;
+
+  color: #FFFFFF;
+
+  text-align: left;
+}
+
+.citation p {
+  font-family: Cardo;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+
+  color: #FFFFFF;
+
+  text-align: left;
+
+  margin-bottom: 0;
+}
